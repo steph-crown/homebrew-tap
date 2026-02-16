@@ -1,25 +1,25 @@
 class AseShell < Formula
   desc "àṣẹ – a small Unix-style interactive shell in Rust"
   homepage "https://github.com/steph-crown/ase"
-  version "0.1.3"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/steph-crown/ase/releases/download/v0.1.3/ase-shell-aarch64-apple-darwin.tar.xz"
-      sha256 "701253ccc8b873df7be6013636881b1331ff2d3475a44a75a66e60799bab99ce"
+      url "https://github.com/steph-crown/ase/releases/download/v0.2.0/ase-shell-aarch64-apple-darwin.tar.xz"
+      sha256 "4232bdcbf898b1b1d9c4b007787efc859d55a3a41ca365a39b395374b5464eed"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/steph-crown/ase/releases/download/v0.1.3/ase-shell-x86_64-apple-darwin.tar.xz"
-      sha256 "177ecf041e03b9a146bb1c0ae741414cf077f1adef0916d2670d0e4636b42399"
+      url "https://github.com/steph-crown/ase/releases/download/v0.2.0/ase-shell-x86_64-apple-darwin.tar.xz"
+      sha256 "98f31e88df1cb52ec2e7c6c3e8a3a602a696b6a24c1a78b12676733001fb30c3"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/steph-crown/ase/releases/download/v0.1.3/ase-shell-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "29197ca98ed594a9b98f3841b91a3939ea4d73eb09420e86c462bac89a9b7e5b"
+      url "https://github.com/steph-crown/ase/releases/download/v0.2.0/ase-shell-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "b6f5e0ab90600a6b5d8dd15b1d59ca1ec039fcd02e4f37cfc971d389ce049809"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/steph-crown/ase/releases/download/v0.1.3/ase-shell-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "3187694ac7c47a0906575ca5f29a9ae1e51f5ef5cf709dd4cb0e5d3ada391411"
+      url "https://github.com/steph-crown/ase/releases/download/v0.2.0/ase-shell-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "8687e6b7f25c660e495d1e22f0b0b09c17ef6da815b89d9f405da61ca2333052"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
